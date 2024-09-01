@@ -11,11 +11,7 @@
   display: grid;
 
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 200px 1fr;
-}
-
-.header {
-  background-color: #fff;
+  grid-template-rows: 150px 1fr;
 }
 
 .sidebar {
@@ -41,6 +37,10 @@
   font-weight: 600;
 }
 
+.main-content {
+  z-index: -1;
+}
+
 .dashboard img {
   margin-right: 20px;
   margin-left: -20px;
@@ -53,4 +53,85 @@
 
 .main-content {
   background-color: grey;
+}
+
+.header {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 55vw 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.search {
+  grid-column: 1 / 2;
+  padding-left: 60px;
+  align-self: center;
+}
+
+.search img {
+  margin-right: 15px;
+}
+
+.container .profile-info {
+  grid-column: 2/3;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 50px 80px 50px;
+}
+
+.welcome {
+  grid-column: 1 /2;
+  grid-row: 2/3;
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: 100px 300px;
+  margin-bottom: 10px;
+}
+
+.welcome div {
+  align-self: center;
+}
+
+.buttons {
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.search .search-box {
+  height: 30px;
+  width: 700px;
+  border-radius: 30px;
+  background-color: rgb(212, 212, 212);
+
+  display: inline-block;
+}
+
+.profile-info img {
+  display: inline;
+}
+
+.profile-info p {
+  display: inline;
+}
+
+.profile-info {
+  display: inline;
+}
+
+.buttons button {
+  background-color: rgb(71, 71, 187);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  height: 35px;
+  width: 70px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.welcome p,
+.welcome h3 {
+  display: inline;
 }
